@@ -47,38 +47,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-USB_Experiments.hex \
+stm32experiments.hex \
 
 SECONDARY_SIZE += \
-USB_Experiments.siz \
+stm32experiments.siz \
 
 
 # All Target
-all: USB_Experiments.elf secondary-outputs
+all: stm32experiments.elf secondary-outputs
 
 # Tool invocations
-USB_Experiments.elf: $(OBJS) $(USER_OBJS)
+stm32experiments.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU ARM Cross C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto -fno-move-loop-invariants -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"USB_Experiments.map" --specs=nano.specs -o "USB_Experiments.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto -fno-move-loop-invariants -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"stm32experiments.map" --specs=nano.specs -o "stm32experiments.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-USB_Experiments.hex: USB_Experiments.elf
+stm32experiments.hex: stm32experiments.elf
 	@echo 'Invoking: GNU ARM Cross Create Flash Image'
-	arm-none-eabi-objcopy -O ihex "USB_Experiments.elf"  "USB_Experiments.hex"
+	arm-none-eabi-objcopy -O ihex "stm32experiments.elf"  "stm32experiments.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-USB_Experiments.siz: USB_Experiments.elf
+stm32experiments.siz: stm32experiments.elf
 	@echo 'Invoking: GNU ARM Cross Print Size'
-	arm-none-eabi-size --format=berkeley "USB_Experiments.elf"
+	arm-none-eabi-size --format=berkeley "stm32experiments.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) USB_Experiments.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) stm32experiments.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)

@@ -5,4 +5,4 @@
 /**
  * Returns 2^B, i.e. 1 at Bth position starting from zero.
  */
-#define BV(B) 1 << B
+#define BV(B) (1 << B)

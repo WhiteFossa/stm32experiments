@@ -27,11 +27,8 @@
 
 // ----------------------------------------------------------------------------
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "diag/Trace.h"
 
-
+#include "main.h"
 #include "hal.c"
 
 
@@ -55,16 +52,111 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
-// Bits in port D
-#define LED_RED			14
-#define LED_ORANGE		13
-#define LED_GREEN		12
-#define LED_BLUE		15
+
+
+int GetLedPinByChannel(unsigned char channel)
+{
+	switch (channel)
+	{
+		case PWM_RED:
+			return LED_RED;
+		case PWM_GREEN:
+			return LED_GREEN;
+		case PWM_BLUE:
+			return LED_BLUE;
+		default:
+			return -1;
+	}
+}
+
+void NextBrightness()
+{
+	switch (brightness_state)
+	{
+		case INC_RED:
+			brightness[PWM_RED] += BRIGHTNESS_STEP;
+
+			if (brightness[PWM_RED] >= 1)
+			{
+				brightness_state = INC_GREEN;
+			}
+		break;
+
+		case INC_GREEN:
+			brightness[PWM_GREEN] += BRIGHTNESS_STEP;
+
+			if (brightness[PWM_GREEN] >= 1)
+			{
+				brightness_state = INC_BLUE;
+			}
+		break;
+
+		case INC_BLUE:
+			brightness[PWM_BLUE] += BRIGHTNESS_STEP;
+
+			if (brightness[PWM_BLUE] >= 1)
+			{
+				brightness_state = DEC_RED;
+			}
+		break;
+
+		case DEC_RED:
+			brightness[PWM_RED] -= BRIGHTNESS_STEP;
+
+			if (brightness[PWM_RED] <= 0)
+			{
+				brightness_state = DEC_GREEN;
+			}
+		break;
+
+		case DEC_GREEN:
+			brightness[PWM_GREEN] -= BRIGHTNESS_STEP;
+
+			if (brightness[PWM_GREEN] <= 0)
+			{
+				brightness_state = DEC_BLUE;
+			}
+		break;
+
+		case DEC_BLUE:
+			brightness[PWM_BLUE] -= BRIGHTNESS_STEP;
+
+			if (brightness[PWM_BLUE] <= 0)
+			{
+				brightness_state = INC_RED;
+			}
+		break;
+	}
+}
+
+unsigned char CorrectPWMLevel(float brightness, unsigned char channel)
+{
+	int result = floor(brightness * correction_a[channel] + correction_b[channel] + 0.5);
+	if (result > 255)
+	{
+		result = 255;
+	}
+	else if (result < 0)
+	{
+		result = 0;
+	}
+
+	return (unsigned char)result;
+}
 
 int main(int argc, char* argv[])
 {
 	// Hardware initialization.
 	InitializeHardware();
+
+	// Correction table
+	correction_a[PWM_RED] = CORRECTION_A_RED;
+	correction_a[PWM_GREEN] = CORRECTION_A_GREEN;
+	correction_a[PWM_BLUE] = CORRECTION_A_BLUE;
+
+	correction_b[PWM_RED] = CORRECTION_B_RED;
+	correction_b[PWM_GREEN] = CORRECTION_B_GREEN;
+	correction_b[PWM_BLUE] = CORRECTION_B_BLUE;
 
 	// Enabling port D
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
@@ -75,21 +167,52 @@ int main(int argc, char* argv[])
 	GPIOD->MODER |= 01 << (LED_GREEN << 1);
 	GPIOD->MODER |= 01 << (LED_BLUE << 1);
 
+	// Software PWM
+	pwm_levels[PWM_RED] = 0;
+	pwm_levels[PWM_GREEN] = 0;
+	pwm_levels[PWM_BLUE] = 0;
+
+
+	brightness[PWM_RED] = 0;
+	brightness[PWM_GREEN] = 0;
+	brightness[PWM_BLUE] = 0;
 
 	// Endless loop
+	unsigned char pwm = 0;
+
+	unsigned int counter = 0;
+
 	while(1)
 	{
-		GPIOD->ODR = BV(LED_RED) | BV (LED_GREEN);
-
-		for (int c = 0; c < 1000000; c++)
+		for (unsigned char channel = 0; channel < 3; channel ++)
 		{
+			volatile int ledPin = GetLedPinByChannel(channel);
+			if (pwm_levels[channel] > pwm)
+			{
+				GPIOD->ODR |= BV(ledPin);
+			}
+			else
+			{
+				GPIOD->ODR &= ~BV(ledPin);
+			}
 		}
 
+		pwm ++;
 
-		GPIOD->ODR = BV(LED_ORANGE) | BV (LED_BLUE);
-
-		for (int c = 0; c < 1000000; c++)
+		if (counter < 1000)
 		{
+			counter ++;
+		}
+		else
+		{
+			NextBrightness();
+
+			for (unsigned char channel = 0; channel < 3; channel ++)
+			{
+				pwm_levels[channel] = CorrectPWMLevel(brightness[channel], channel);
+			}
+
+			counter = 0;
 		}
 	}
 
