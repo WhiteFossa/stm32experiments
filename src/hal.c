@@ -3,6 +3,48 @@
 void InitializeHardware(void)
 {
 	SetFullClock();
+
+	// Setting up ports
+
+	// Port A (leds)
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
+
+	// Full speed
+	GPIOA->OSPEEDR |= 0b11 << (HAL_LED_RED_BIT << 1);
+	GPIOA->OSPEEDR |= 0b11 << (HAL_LED_GREEN_BIT << 1);
+	GPIOA->OSPEEDR |= 0b11 << (HAL_LED_BLUE_BIT << 1);
+
+	// Alternative functions
+	GPIOA->MODER |= 0b10 << (HAL_LED_RED_BIT << 1);
+	GPIOA->MODER |= 0b10 << (HAL_LED_GREEN_BIT << 1);
+	GPIOA->MODER |= 0b10 << (HAL_LED_BLUE_BIT << 1);
+
+	// AF1 - TIM2 Channels 2,3,4
+	GPIOA->AFR[0] |= 1 << (HAL_LED_RED_BIT << 2);
+	GPIOA->AFR[0] |= 1 << (HAL_LED_GREEN_BIT << 2);
+	GPIOA->AFR[0] |= 1 << (HAL_LED_BLUE_BIT << 2);
+
+	// Timer 2 power on
+	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+
+	// SMS = 0b000, no slave mode
+	TIM2->SMCR &= ~TIM_SMCR_SMS;
+
+	// Prescaler
+	TIM2->PSC = 1;
+
+	// Counting from 0 to this value
+	TIM2->ARR = 10000;
+
+	// PWM mode
+	TIM2->CCMR1 = (TIM2->CCMR1 & ~TIM_CCMR1_OC2M) | TIM_CCMR1_OC2M_2 | TIM_CCMR1_OC2M_1;
+	TIM2->CCMR2 = (TIM2->CCMR2 & ~TIM_CCMR2_OC3M) | TIM_CCMR2_OC3M_2 | TIM_CCMR2_OC3M_1;
+	TIM2->CCMR2 = (TIM2->CCMR2 & ~TIM_CCMR2_OC4M) | TIM_CCMR2_OC4M_2 | TIM_CCMR2_OC4M_1;
+
+	// Enabling output compare
+	TIM2->CCER |= TIM_CCER_CC2E | TIM_CCER_CC3E | TIM_CCER_CC4E;
+
+	TIM2->CR1 |= TIM_CR1_ARPE | TIM_CR1_CEN;
 }
 
 void SetFullClock(void)

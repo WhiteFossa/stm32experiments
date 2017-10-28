@@ -129,19 +129,9 @@ void NextBrightness()
 	}
 }
 
-unsigned char CorrectPWMLevel(float brightness, unsigned char channel)
+unsigned int CorrectPWMLevel(float brightness, unsigned char channel)
 {
-	int result = floor(brightness * correction_a[channel] + correction_b[channel] + 0.5);
-	if (result > 255)
-	{
-		result = 255;
-	}
-	else if (result < 0)
-	{
-		result = 0;
-	}
-
-	return (unsigned char)result;
+	return (unsigned int)floor(brightness * correction_a[channel] + correction_b[channel] + 0.5);
 }
 
 int main(int argc, char* argv[])
@@ -158,48 +148,16 @@ int main(int argc, char* argv[])
 	correction_b[PWM_GREEN] = CORRECTION_B_GREEN;
 	correction_b[PWM_BLUE] = CORRECTION_B_BLUE;
 
-	// Enabling port D
-	RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
-
-	// Open drain output
-	GPIOD->MODER |= 01 << (LED_RED << 1);
-	GPIOD->MODER |= 01 << (LED_ORANGE << 1);
-	GPIOD->MODER |= 01 << (LED_GREEN << 1);
-	GPIOD->MODER |= 01 << (LED_BLUE << 1);
-
-	// Software PWM
-	pwm_levels[PWM_RED] = 0;
-	pwm_levels[PWM_GREEN] = 0;
-	pwm_levels[PWM_BLUE] = 0;
-
-
 	brightness[PWM_RED] = 0;
 	brightness[PWM_GREEN] = 0;
 	brightness[PWM_BLUE] = 0;
 
 	// Endless loop
-	unsigned char pwm = 0;
-
 	unsigned int counter = 0;
 
 	while(1)
 	{
-		for (unsigned char channel = 0; channel < 3; channel ++)
-		{
-			volatile int ledPin = GetLedPinByChannel(channel);
-			if (pwm_levels[channel] > pwm)
-			{
-				GPIOD->ODR |= BV(ledPin);
-			}
-			else
-			{
-				GPIOD->ODR &= ~BV(ledPin);
-			}
-		}
-
-		pwm ++;
-
-		if (counter < 1000)
+		if (counter < 10000)
 		{
 			counter ++;
 		}
@@ -207,10 +165,9 @@ int main(int argc, char* argv[])
 		{
 			NextBrightness();
 
-			for (unsigned char channel = 0; channel < 3; channel ++)
-			{
-				pwm_levels[channel] = CorrectPWMLevel(brightness[channel], channel);
-			}
+			TIM2->CCR2 = CorrectPWMLevel(brightness[PWM_RED], PWM_RED);
+			TIM2->CCR3 = CorrectPWMLevel(brightness[PWM_GREEN], PWM_GREEN);
+			TIM2->CCR4 = CorrectPWMLevel(brightness[PWM_BLUE], PWM_BLUE);
 
 			counter = 0;
 		}

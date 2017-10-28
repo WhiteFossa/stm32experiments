@@ -26,9 +26,9 @@ unsigned char pwm_levels[3];
 
 // Correction factors by colors
 // PWM = a*X + b, X=[0,1]
-#define CORRECTION_A_RED	255.0
-#define CORRECTION_A_GREEN	128.0
-#define CORRECTION_A_BLUE	255.0
+#define CORRECTION_A_RED	10000.0
+#define CORRECTION_A_GREEN	3000.0
+#define CORRECTION_A_BLUE	5000.0
 
 #define CORRECTION_B_RED	0.0
 #define CORRECTION_B_GREEN	0.0
@@ -37,7 +37,7 @@ unsigned char pwm_levels[3];
 float correction_a[3];
 float correction_b[3];
 
-unsigned char CorrectPWMLevel(float brightness, unsigned char channel);
+unsigned int CorrectPWMLevel(float brightness, unsigned char channel);
 
 #define BRIGHTNESS_STEP 0.0001
 

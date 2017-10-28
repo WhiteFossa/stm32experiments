@@ -67,6 +67,18 @@
  * END CLOCK-DEPENDENT DEFINES
  */
 
+/**
+ * GPIO-related stuff.
+ */
+
+/**
+ * Leds at port A
+ */
+#define HAL_LED_RED_BIT		1
+#define HAL_LED_GREEN_BIT	2
+#define HAL_LED_BLUE_BIT	3
+
+
 
 /**
  * Basic hardware initialization.
