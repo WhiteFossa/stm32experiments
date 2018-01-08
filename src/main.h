@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "diag/Trace.h"
 #include <math.h>
+#include "hal.h"
 
 // Bits in port D
 #define LED_RED			14
@@ -39,7 +40,7 @@ float correction_b[3];
 
 unsigned int CorrectPWMLevel(float brightness, unsigned char channel);
 
-#define BRIGHTNESS_STEP 0.0001
+#define BRIGHTNESS_STEP 0.05
 
 float brightness[3];
 unsigned char brightness_state;
@@ -49,3 +50,9 @@ int GetLedPinByChannel(unsigned char channel);
 void NextBrightness();
 
 int main(int argc, char* argv[]);
+
+/**
+ * Gets called when user button is pressed.
+ */
+void UserButtonPressed();
+

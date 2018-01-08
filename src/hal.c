@@ -1,5 +1,16 @@
 #include "hal.h"
 
+/**
+ * EXTI channel 0 handler.
+ */
+void EXTI0_IRQHandler(void)
+{
+    EXTI->PR |= (1 << HAL_BUTTON_PIN); // Clearing interrupt
+
+    // Interrupt handler here.
+    UserButtonPressed();
+}
+
 void InitializeHardware(void)
 {
 	SetFullClock();
@@ -23,6 +34,23 @@ void InitializeHardware(void)
 	GPIOA->AFR[0] |= 1 << (HAL_LED_RED_BIT << 2);
 	GPIOA->AFR[0] |= 1 << (HAL_LED_GREEN_BIT << 2);
 	GPIOA->AFR[0] |= 1 << (HAL_LED_BLUE_BIT << 2);
+
+	// Button to input
+	GPIOA->MODER &= ~(1 << HAL_BUTTON_PIN);
+	GPIOA->PUPDR |= (GPIO_PUPDR_PUPDR0_1 << HAL_BUTTON_PIN); // Pull-down = PUPDR: 10
+
+	// We want interrupt on button press (falling edge). PA0, so EXTI channel 0 -> NVIC channel 6
+	EXTI->IMR |= (1 << HAL_BUTTON_PIN);
+	EXTI->FTSR |= (1 << HAL_BUTTON_PIN);
+
+	// Enabling 6th channel
+	uint32_t prioritygroup = NVIC_GetPriorityGrouping();
+
+	// Highest user IRQ priority (0), 1 sub-pri
+	uint32_t priority = NVIC_EncodePriority(prioritygroup, 0, 1 );
+	NVIC_SetPriority(EXTI0_IRQn, priority);
+
+	NVIC_EnableIRQ(EXTI0_IRQn);
 
 	// Timer 2 power on
 	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;

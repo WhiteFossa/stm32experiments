@@ -29,7 +29,6 @@
 
 
 #include "main.h"
-#include "hal.c"
 
 
 // ----------------------------------------------------------------------------
@@ -52,7 +51,15 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
+void UserButtonPressed()
+{
+	NextBrightness();
 
+	TIM2->CCR2 = CorrectPWMLevel(brightness[PWM_RED], PWM_RED);
+	TIM2->CCR3 = CorrectPWMLevel(brightness[PWM_GREEN], PWM_GREEN);
+	TIM2->CCR4 = CorrectPWMLevel(brightness[PWM_BLUE], PWM_BLUE);
+
+}
 
 int GetLedPinByChannel(unsigned char channel)
 {
@@ -153,24 +160,8 @@ int main(int argc, char* argv[])
 	brightness[PWM_BLUE] = 0;
 
 	// Endless loop
-	unsigned int counter = 0;
-
 	while(1)
 	{
-		if (counter < 10000)
-		{
-			counter ++;
-		}
-		else
-		{
-			NextBrightness();
-
-			TIM2->CCR2 = CorrectPWMLevel(brightness[PWM_RED], PWM_RED);
-			TIM2->CCR3 = CorrectPWMLevel(brightness[PWM_GREEN], PWM_GREEN);
-			TIM2->CCR4 = CorrectPWMLevel(brightness[PWM_BLUE], PWM_BLUE);
-
-			counter = 0;
-		}
 	}
 
   return 0;

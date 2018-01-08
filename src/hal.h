@@ -74,11 +74,16 @@
  */
 
 /**
- * Leds at port A
+ * Leds at port A.
  */
 #define HAL_LED_RED_BIT		1
 #define HAL_LED_GREEN_BIT	2
 #define HAL_LED_BLUE_BIT	3
+
+/**
+ * Button pin on port A.
+ */
+#define HAL_BUTTON_PIN		0
 
 /**
  * Timer 2 maximal value.

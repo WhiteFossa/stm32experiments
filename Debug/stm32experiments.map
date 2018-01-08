@@ -41,25 +41,25 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-readr.o)
                               /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-stdio.o) (_read_r)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (floor)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (floor)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_dsub)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_dsub)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
                               /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o) (__aeabi_dcmpgt)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_d2uiz)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_d2uiz)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_d2f)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_d2f)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_fadd)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_fadd)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_fmul)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_fmul)
 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (__aeabi_fcmple)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (__aeabi_fcmple)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strlen.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (strlen)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (strlen)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
-                              /tmp/ccsNTR4r.ltrans0.ltrans.o (vsnprintf)
+                              /tmp/ccYY6T30.ltrans0.ltrans.o (vsnprintf)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
                               /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o) (_svfprintf_r)
 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
@@ -78,41 +78,46 @@ Archive member included to satisfy reference by file (symbol)
 Allocating common symbols
 Common symbol       size              file
 
-errno               0x4               /tmp/ccsNTR4r.ltrans0.ltrans.o
+correction_a        0xc               ./src/main.o (symbol from plugin)
+correction_b        0xc               ./src/main.o (symbol from plugin)
+errno               0x4               /tmp/ccYY6T30.ltrans0.ltrans.o
+brightness_state    0x1               ./src/main.o (symbol from plugin)
+pwm_levels          0x3               ./src/main.o (symbol from plugin)
+brightness          0xc               ./src/main.o (symbol from plugin)
 
 Discarded input sections
 
  .text          0x0000000000000000        0x0 ./system/src/newlib/_cxx.o (symbol from plugin)
- .text          0x0000000000000000        0x0 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.get_errno
-                0x0000000000000000       0x12 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x12 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.trace_puts
-                0x0000000000000000       0x20 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text.error    0x0000000000000000       0x14 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x20 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.error    0x0000000000000000       0x14 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.checkerror
-                0x0000000000000000       0x10 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x10 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text._swiclose
-                0x0000000000000000       0x1e /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x1e /tmp/ccYY6T30.ltrans0.ltrans.o
  .text._swiwrite
-                0x0000000000000000       0x20 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x20 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text._swiread
-                0x0000000000000000       0x20 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x20 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.findslot
-                0x0000000000000000       0x3c /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x3c /tmp/ccYY6T30.ltrans0.ltrans.o
  .text._swilseek
-                0x0000000000000000       0xb6 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._close   0x0000000000000000       0x4c /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._write   0x0000000000000000       0x46 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._lseek   0x0000000000000000        0x8 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._read    0x0000000000000000       0x36 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._exit    0x0000000000000000       0x20 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text.abort    0x0000000000000000       0x14 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0xb6 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._close   0x0000000000000000       0x4c /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._write   0x0000000000000000       0x46 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._lseek   0x0000000000000000        0x8 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._read    0x0000000000000000       0x36 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._exit    0x0000000000000000       0x20 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.abort    0x0000000000000000       0x14 /tmp/ccYY6T30.ltrans0.ltrans.o
  .rodata.abort.str1.4
-                0x0000000000000000       0x14 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x14 /tmp/ccYY6T30.ltrans0.ltrans.o
  .rodata.trace_puts.str1.4
-                0x0000000000000000        0x2 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000        0x2 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text          0x0000000000000000        0x0 ./system/src/newlib/_exit.o (symbol from plugin)
  .text          0x0000000000000000        0x0 ./system/src/newlib/_sbrk.o (symbol from plugin)
  .text          0x0000000000000000        0x0 ./system/src/newlib/_startup.o (symbol from plugin)
@@ -419,7 +424,7 @@ MEMORY_ARRAY     0x0000000020002000 0x0000000000000020 xrw
 Linker script and memory map
 
 LOAD ./system/src/newlib/_cxx.o
-LOAD /tmp/ccsNTR4r.ltrans0.ltrans.o
+LOAD /tmp/ccYY6T30.ltrans0.ltrans.o
 LOAD ./system/src/newlib/_exit.o
 LOAD ./system/src/newlib/_sbrk.o
 LOAD ./system/src/newlib/_startup.o
@@ -461,12 +466,12 @@ END GROUP
                 0x0000000008000000                __vectors_start = ABSOLUTE (.)
                 0x0000000008000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
- .isr_vector    0x0000000008000000      0x188 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .isr_vector    0x0000000008000000      0x188 /tmp/ccYY6T30.ltrans0.ltrans.o
                 0x0000000008000000                __isr_vectors
  *(.cfmconfig)
  *(.after_vectors .after_vectors.*)
  .after_vectors
-                0x0000000008000188      0x238 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000188      0x238 /tmp/ccYY6T30.ltrans0.ltrans.o
                 0x00000000080001de                UsageFault_Handler_C
                 0x0000000008000210                BusFault_Handler_C
                 0x0000000008000244                HardFault_Handler_C
@@ -474,10 +479,10 @@ END GROUP
 
 .inits          0x00000000080003c0       0x28
                 0x00000000080003c0                __data_regions_array_start = .
-                0x00000000080003c0        0x4 LONG 0x8002580 LOADADDR (.data)
+                0x00000000080003c0        0x4 LONG 0x80025f0 LOADADDR (.data)
                 0x00000000080003c4        0x4 LONG 0x20000000 ADDR (.data)
                 0x00000000080003c8        0x4 LONG 0x200001dc (ADDR (.data) + SIZEOF (.data))
-                0x00000000080003cc        0x4 LONG 0x8002580 LOADADDR (.data_CCMRAM)
+                0x00000000080003cc        0x4 LONG 0x80025f0 LOADADDR (.data_CCMRAM)
                 0x00000000080003d0        0x4 LONG 0x10000000 ADDR (.data_CCMRAM)
                 0x00000000080003d4        0x4 LONG 0x10000000 (ADDR (.data_CCMRAM) + SIZEOF (.data_CCMRAM))
                 0x00000000080003d8                __data_regions_array_end = .
@@ -509,257 +514,260 @@ END GROUP
 .flashtext
  *(.flashtext .flashtext.*)
 
-.text           0x00000000080003f0     0x218e
+.text           0x00000000080003f0     0x21fe
  *(.text .text.*)
- .text._Z14NextBrightnessv
-                0x00000000080003f0      0x128 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._Z12SetFullClockv
-                0x0000000008000518      0x130 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._Z18InitializeHardwarev
-                0x0000000008000648       0xbc /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .text.NextBrightness
+                0x00000000080003f0      0x128 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.SetFullClock
+                0x0000000008000518      0x130 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.InitializeHardware
+                0x0000000008000648      0x118 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.main     0x0000000008000760       0x4c /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.SystemCoreClockUpdate
-                0x0000000008000704       0xa0 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000080007ac       0xa0 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.SystemInit
-                0x00000000080007a4       0x40 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x000000000800084c       0x40 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.__initialize_hardware
-                0x00000000080007e4        0x8 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x000000000800088c        0x8 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.__initialize_hardware_early
-                0x00000000080007ec       0x18 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000894       0x18 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text._trace_write_semihosting_debug
-                0x0000000008000804       0x60 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000080008ac       0x60 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.trace_write
-                0x0000000008000864        0x8 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x000000000800090c        0x8 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.initialise_monitor_handles
-                0x000000000800086c       0xa8 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._Z15CorrectPWMLevelfh
-                0x0000000008000914       0x3c /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text.main     0x0000000008000950       0x84 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000914       0xa8 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.CorrectPWMLevel
+                0x00000000080009bc       0x3c /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.UserButtonPressed
+                0x00000000080009f8       0x30 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text.EXTI0_IRQHandler
+                0x0000000008000a28       0x18 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.isSemihosting
-                0x00000000080009d4      0x100 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000a40      0x100 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.trace_printf
-                0x0000000008000ad4       0x30 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000b40       0x30 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.dumpExceptionStack
-                0x0000000008000b04       0xf4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008000b70       0xf4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .text.__initialize_args
-                0x0000000008000bf8       0xd0 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .text._sbrk    0x0000000008000cc8       0x44 /tmp/ccsNTR4r.ltrans0.ltrans.o
-                0x0000000008000cc8                _sbrk
- .text.__errno  0x0000000008000d0c        0xc /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
-                0x0000000008000d0c                __errno
+                0x0000000008000c64       0xd0 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .text._sbrk    0x0000000008000d34       0x44 /tmp/ccYY6T30.ltrans0.ltrans.o
+                0x0000000008000d34                _sbrk
+ .text.__errno  0x0000000008000d78        0xc /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+                0x0000000008000d78                __errno
  .text.__locale_ctype_ptr
-                0x0000000008000d18       0x1c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
-                0x0000000008000d18                __locale_ctype_ptr
+                0x0000000008000d84       0x1c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+                0x0000000008000d84                __locale_ctype_ptr
  .text.__ascii_mbtowc
-                0x0000000008000d34       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
-                0x0000000008000d34                __ascii_mbtowc
+                0x0000000008000da0       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+                0x0000000008000da0                __ascii_mbtowc
  .text._malloc_r
-                0x0000000008000d58       0xb4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
-                0x0000000008000d58                _malloc_r
- .text._sbrk_r  0x0000000008000e0c       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
-                0x0000000008000e0c                _sbrk_r
- .text          0x0000000008000e2c       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
-                0x0000000008000e2c                strcmp
+                0x0000000008000dc4       0xb4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008000dc4                _malloc_r
+ .text._sbrk_r  0x0000000008000e78       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+                0x0000000008000e78                _sbrk_r
+ .text          0x0000000008000e98       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+                0x0000000008000e98                strcmp
  .text.__ascii_wctomb
-                0x0000000008000e40       0x1a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
-                0x0000000008000e40                __ascii_wctomb
+                0x0000000008000eac       0x1a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+                0x0000000008000eac                __ascii_wctomb
  .text.__malloc_lock
-                0x0000000008000e5a        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
-                0x0000000008000e5a                __malloc_lock
+                0x0000000008000ec6        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+                0x0000000008000ec6                __malloc_lock
  .text.__malloc_unlock
-                0x0000000008000e5c        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
-                0x0000000008000e5c                __malloc_unlock
- *fill*         0x0000000008000e5e        0x2 
- .text._free_r  0x0000000008000e60       0x9c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
-                0x0000000008000e60                _free_r
- *fill*         0x0000000008000efc        0x4 
- .text.floor    0x0000000008000f00      0x108 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
-                0x0000000008000f00                floor
- .text          0x0000000008001008      0x378 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
-                0x0000000008001008                __aeabi_drsub
-                0x0000000008001010                __aeabi_dsub
-                0x0000000008001010                __subdf3
-                0x0000000008001014                __adddf3
-                0x0000000008001014                __aeabi_dadd
-                0x000000000800128c                __aeabi_ui2d
-                0x000000000800128c                __floatunsidf
-                0x00000000080012ac                __floatsidf
-                0x00000000080012ac                __aeabi_i2d
-                0x00000000080012d0                __extendsfdf2
-                0x00000000080012d0                __aeabi_f2d
-                0x0000000008001314                __aeabi_ul2d
-                0x0000000008001314                __floatundidf
-                0x0000000008001324                __floatdidf
-                0x0000000008001324                __aeabi_l2d
- .text          0x0000000008001380      0x110 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
-                0x0000000008001380                __gtdf2
-                0x0000000008001380                __gedf2
-                0x0000000008001388                __ltdf2
-                0x0000000008001388                __ledf2
-                0x0000000008001390                __cmpdf2
-                0x0000000008001390                __eqdf2
-                0x0000000008001390                __nedf2
-                0x000000000800140c                __aeabi_cdrcmple
-                0x000000000800141c                __aeabi_cdcmple
-                0x000000000800141c                __aeabi_cdcmpeq
-                0x000000000800142c                __aeabi_dcmpeq
-                0x0000000008001440                __aeabi_dcmplt
-                0x0000000008001454                __aeabi_dcmple
-                0x0000000008001468                __aeabi_dcmpge
-                0x000000000800147c                __aeabi_dcmpgt
- .text          0x0000000008001490       0x40 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
-                0x0000000008001490                __fixunsdfsi
-                0x0000000008001490                __aeabi_d2uiz
- .text          0x00000000080014d0       0xa0 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
-                0x00000000080014d0                __aeabi_d2f
-                0x00000000080014d0                __truncdfsf2
- .text          0x0000000008001570      0x21c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
-                0x0000000008001570                __aeabi_frsub
-                0x0000000008001578                __subsf3
-                0x0000000008001578                __aeabi_fsub
-                0x000000000800157c                __aeabi_fadd
-                0x000000000800157c                __addsf3
-                0x00000000080016dc                __aeabi_ui2f
-                0x00000000080016dc                __floatunsisf
-                0x00000000080016e4                __aeabi_i2f
-                0x00000000080016e4                __floatsisf
-                0x0000000008001700                __floatundisf
-                0x0000000008001700                __aeabi_ul2f
-                0x0000000008001710                __floatdisf
-                0x0000000008001710                __aeabi_l2f
- .text          0x000000000800178c      0x2a0 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
-                0x000000000800178c                __mulsf3
-                0x000000000800178c                __aeabi_fmul
-                0x00000000080018f4                __divsf3
-                0x00000000080018f4                __aeabi_fdiv
- .text          0x0000000008001a2c       0xec /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
-                0x0000000008001a2c                __gtsf2
-                0x0000000008001a2c                __gesf2
-                0x0000000008001a34                __lesf2
-                0x0000000008001a34                __ltsf2
-                0x0000000008001a3c                __nesf2
-                0x0000000008001a3c                __eqsf2
-                0x0000000008001a3c                __cmpsf2
-                0x0000000008001a9c                __aeabi_cfrcmple
-                0x0000000008001aa4                __aeabi_cfcmple
-                0x0000000008001aa4                __aeabi_cfcmpeq
-                0x0000000008001ab4                __aeabi_fcmpeq
-                0x0000000008001ac8                __aeabi_fcmplt
-                0x0000000008001adc                __aeabi_fcmple
-                0x0000000008001af0                __aeabi_fcmpge
-                0x0000000008001b04                __aeabi_fcmpgt
+                0x0000000008000ec8        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+                0x0000000008000ec8                __malloc_unlock
+ *fill*         0x0000000008000eca        0x2 
+ .text._free_r  0x0000000008000ecc       0x9c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+                0x0000000008000ecc                _free_r
+ .text.floor    0x0000000008000f68      0x108 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+                0x0000000008000f68                floor
+ .text          0x0000000008001070      0x378 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+                0x0000000008001070                __aeabi_drsub
+                0x0000000008001078                __aeabi_dsub
+                0x0000000008001078                __subdf3
+                0x000000000800107c                __adddf3
+                0x000000000800107c                __aeabi_dadd
+                0x00000000080012f4                __aeabi_ui2d
+                0x00000000080012f4                __floatunsidf
+                0x0000000008001314                __floatsidf
+                0x0000000008001314                __aeabi_i2d
+                0x0000000008001338                __extendsfdf2
+                0x0000000008001338                __aeabi_f2d
+                0x000000000800137c                __aeabi_ul2d
+                0x000000000800137c                __floatundidf
+                0x000000000800138c                __floatdidf
+                0x000000000800138c                __aeabi_l2d
+ .text          0x00000000080013e8      0x110 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+                0x00000000080013e8                __gtdf2
+                0x00000000080013e8                __gedf2
+                0x00000000080013f0                __ltdf2
+                0x00000000080013f0                __ledf2
+                0x00000000080013f8                __cmpdf2
+                0x00000000080013f8                __eqdf2
+                0x00000000080013f8                __nedf2
+                0x0000000008001474                __aeabi_cdrcmple
+                0x0000000008001484                __aeabi_cdcmple
+                0x0000000008001484                __aeabi_cdcmpeq
+                0x0000000008001494                __aeabi_dcmpeq
+                0x00000000080014a8                __aeabi_dcmplt
+                0x00000000080014bc                __aeabi_dcmple
+                0x00000000080014d0                __aeabi_dcmpge
+                0x00000000080014e4                __aeabi_dcmpgt
+ .text          0x00000000080014f8       0x40 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x00000000080014f8                __fixunsdfsi
+                0x00000000080014f8                __aeabi_d2uiz
+ .text          0x0000000008001538       0xa0 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+                0x0000000008001538                __aeabi_d2f
+                0x0000000008001538                __truncdfsf2
+ .text          0x00000000080015d8      0x21c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+                0x00000000080015d8                __aeabi_frsub
+                0x00000000080015e0                __subsf3
+                0x00000000080015e0                __aeabi_fsub
+                0x00000000080015e4                __aeabi_fadd
+                0x00000000080015e4                __addsf3
+                0x0000000008001744                __aeabi_ui2f
+                0x0000000008001744                __floatunsisf
+                0x000000000800174c                __aeabi_i2f
+                0x000000000800174c                __floatsisf
+                0x0000000008001768                __floatundisf
+                0x0000000008001768                __aeabi_ul2f
+                0x0000000008001778                __floatdisf
+                0x0000000008001778                __aeabi_l2f
+ .text          0x00000000080017f4      0x2a0 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+                0x00000000080017f4                __mulsf3
+                0x00000000080017f4                __aeabi_fmul
+                0x000000000800195c                __divsf3
+                0x000000000800195c                __aeabi_fdiv
+ .text          0x0000000008001a94       0xec /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+                0x0000000008001a94                __gtsf2
+                0x0000000008001a94                __gesf2
+                0x0000000008001a9c                __lesf2
+                0x0000000008001a9c                __ltsf2
+                0x0000000008001aa4                __nesf2
+                0x0000000008001aa4                __eqsf2
+                0x0000000008001aa4                __cmpsf2
+                0x0000000008001b04                __aeabi_cfrcmple
+                0x0000000008001b0c                __aeabi_cfcmple
+                0x0000000008001b0c                __aeabi_cfcmpeq
+                0x0000000008001b1c                __aeabi_fcmpeq
+                0x0000000008001b30                __aeabi_fcmplt
+                0x0000000008001b44                __aeabi_fcmple
+                0x0000000008001b58                __aeabi_fcmpge
+                0x0000000008001b6c                __aeabi_fcmpgt
  .text._vsnprintf_r
-                0x0000000008001b18       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
-                0x0000000008001b18                _vsnprintf_r
-                0x0000000008001b18                _vsniprintf_r
+                0x0000000008001b80       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+                0x0000000008001b80                _vsnprintf_r
+                0x0000000008001b80                _vsniprintf_r
  .text.vsnprintf
-                0x0000000008001b70       0x1c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
-                0x0000000008001b70                vsnprintf
-                0x0000000008001b70                vsniprintf
+                0x0000000008001bd8       0x1c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+                0x0000000008001bd8                vsnprintf
+                0x0000000008001bd8                vsniprintf
  .text.__ssputs_r
-                0x0000000008001b8c       0xb4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0000000008001b8c                __ssputs_r
+                0x0000000008001bf4       0xb4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000008001bf4                __ssputs_r
  .text._svfprintf_r
-                0x0000000008001c40      0x1ec /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0000000008001c40                _svfprintf_r
-                0x0000000008001c40                _svfiprintf_r
+                0x0000000008001ca8      0x1ec /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000008001ca8                _svfprintf_r
+                0x0000000008001ca8                _svfiprintf_r
  .text._printf_common
-                0x0000000008001e2c       0xea /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008001e2c                _printf_common
- *fill*         0x0000000008001f16        0x2 
+                0x0000000008001e94       0xea /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008001e94                _printf_common
+ *fill*         0x0000000008001f7e        0x2 
  .text._printf_i
-                0x0000000008001f18      0x224 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008001f18                _printf_i
- *fill*         0x000000000800213c        0x4 
- .text          0x0000000008002140       0xa0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
-                0x0000000008002140                memchr
- .text.memcpy   0x00000000080021e0       0x16 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
-                0x00000000080021e0                memcpy
- .text.memmove  0x00000000080021f6       0x32 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
-                0x00000000080021f6                memmove
+                0x0000000008001f80      0x224 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008001f80                _printf_i
+ *fill*         0x00000000080021a4        0xc 
+ .text          0x00000000080021b0       0xa0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
+                0x00000000080021b0                memchr
+ .text.memcpy   0x0000000008002250       0x16 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008002250                memcpy
+ .text.memmove  0x0000000008002266       0x32 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+                0x0000000008002266                memmove
  .text._realloc_r
-                0x0000000008002228       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
-                0x0000000008002228                _realloc_r
+                0x0000000008002298       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+                0x0000000008002298                _realloc_r
  .text._malloc_usable_size_r
-                0x0000000008002274       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
-                0x0000000008002274                _malloc_usable_size_r
+                0x00000000080022e4       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+                0x00000000080022e4                _malloc_usable_size_r
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.AHBPrescTable
-                0x0000000008002284       0x10 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000080022f4       0x10 /tmp/ccYY6T30.ltrans0.ltrans.o
  .rodata.dumpExceptionStack.str1.4
-                0x0000000008002294      0x11a /tmp/ccsNTR4r.ltrans0.ltrans.o
- *fill*         0x00000000080023ae        0x2 
+                0x0000000008002304      0x11a /tmp/ccYY6T30.ltrans0.ltrans.o
+ *fill*         0x000000000800241e        0x2 
  .rodata.initialise_monitor_handles.str1.4
-                0x00000000080023b0        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008002420        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .rodata.str1.4
-                0x00000000080023b4       0x2c /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000008002424       0x2c /tmp/ccYY6T30.ltrans0.ltrans.o
                                          0x29 (size before relaxing)
  .rodata.__sf_fake_stderr
-                0x00000000080023e0       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
-                0x00000000080023e0                __sf_fake_stderr
+                0x0000000008002450       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+                0x0000000008002450                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000008002400       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
-                0x0000000008002400                __sf_fake_stdin
+                0x0000000008002470       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+                0x0000000008002470                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000008002420       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
-                0x0000000008002420                __sf_fake_stdout
+                0x0000000008002490       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+                0x0000000008002490                __sf_fake_stdout
  .rodata._setlocale_r.str1.1
-                0x0000000008002440        0x8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+                0x00000000080024b0        0x8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
                                           0x9 (size before relaxing)
  .rodata.str1.1
-                0x0000000008002448        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+                0x00000000080024b8        0x2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
  .rodata._ctype_
-                0x000000000800244a      0x101 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
-                0x000000000800244a                _ctype_
+                0x00000000080024ba      0x101 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+                0x00000000080024ba                _ctype_
  .rodata._svfprintf_r.str1.1
-                0x000000000800254b       0x11 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000080025bb       0x11 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x000000000800255c       0x22 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000080025cc       0x22 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
  *(vtable)
  *(.eh_frame*)
  *(.glue_7)
- .glue_7        0x000000000800257e        0x0 linker stubs
+ .glue_7        0x00000000080025ee        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800257e        0x0 linker stubs
+ .glue_7t       0x00000000080025ee        0x0 linker stubs
 
-.vfp11_veneer   0x0000000008002580        0x0
- .vfp11_veneer  0x0000000008002580        0x0 linker stubs
+.vfp11_veneer   0x00000000080025f0        0x0
+ .vfp11_veneer  0x00000000080025f0        0x0 linker stubs
 
-.v4_bx          0x0000000008002580        0x0
- .v4_bx         0x0000000008002580        0x0 linker stubs
+.v4_bx          0x00000000080025f0        0x0
+ .v4_bx         0x00000000080025f0        0x0 linker stubs
 
-.iplt           0x0000000008002580        0x0
- .iplt          0x0000000008002580        0x0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+.iplt           0x00000000080025f0        0x0
+ .iplt          0x00000000080025f0        0x0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
 
-.rel.dyn        0x0000000008002580        0x0
- .rel.iplt      0x0000000008002580        0x0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+.rel.dyn        0x00000000080025f0        0x0
+ .rel.iplt      0x00000000080025f0        0x0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008002580                . = ALIGN (0x4)
-                0x0000000008002580                __exidx_start = .
+                0x00000000080025f0                . = ALIGN (0x4)
+                0x00000000080025f0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000008002580                __exidx_end = .
-                0x0000000008002580                . = ALIGN (0x4)
-                0x0000000008002580                _etext = .
-                0x0000000008002580                __etext = .
+                0x00000000080025f0                __exidx_end = .
+                0x00000000080025f0                . = ALIGN (0x4)
+                0x00000000080025f0                _etext = .
+                0x00000000080025f0                __etext = .
 
-.data_CCMRAM    0x0000000010000000        0x0 load address 0x0000000008002580
+.data_CCMRAM    0x0000000010000000        0x0 load address 0x00000000080025f0
  FILL mask 0xff
  *(.data.CCMRAM .data.CCMRAM.*)
                 0x0000000010000000                . = ALIGN (0x4)
-                0x0000000008002580                _sidata = LOADADDR (.data)
+                0x00000000080025f0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x1dc load address 0x0000000008002580
+.data           0x0000000020000000      0x1dc load address 0x00000000080025f0
  FILL mask 0xff
                 0x0000000020000000                _sdata = .
                 0x0000000020000000                __data_start__ = .
  *(.data_begin .data_begin.*)
- .data_begin    0x0000000020000000        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .data_begin    0x0000000020000000        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  *(.data .data.*)
  .data.SystemCoreClock
-                0x0000000020000004        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000004        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .data._impure_ptr
                 0x0000000020000008        0x4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
                 0x0000000020000008                _impure_ptr
@@ -769,12 +777,12 @@ END GROUP
                 0x000000002000006c      0x16c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
                 0x000000002000006c                __global_locale
  *(.data_end .data_end.*)
- .data_end      0x00000000200001d8        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .data_end      0x00000000200001d8        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
                 0x00000000200001dc                . = ALIGN (0x4)
                 0x00000000200001dc                _edata = .
                 0x00000000200001dc                __data_end__ = .
 
-.igot.plt       0x00000000200001dc        0x0 load address 0x000000000800275c
+.igot.plt       0x00000000200001dc        0x0 load address 0x00000000080027cc
  .igot.plt      0x00000000200001dc        0x0 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
 
 .bss_CCMRAM     0x0000000010000000        0x0
@@ -784,32 +792,32 @@ END GROUP
                 0x00000000200001dc                __bss_start__ = .
                 0x00000000200001dc                _sbss = .
  *(.bss_begin .bss_begin.*)
- .bss_begin     0x00000000200001dc        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .bss_begin     0x00000000200001dc        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  *(.bss .bss.*)
  .bss.args_buf.6244
-                0x00000000200001e0       0x50 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000200001e0       0x50 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.argv_buf.6245
-                0x0000000020000230       0x28 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000230       0x28 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.brightness
-                0x0000000020000258        0xc /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000258        0xc /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.brightness_state
-                0x0000000020000264        0x1 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000264        0x1 /tmp/ccYY6T30.ltrans0.ltrans.o
  *fill*         0x0000000020000265        0x3 
- .bss.buf.5598  0x0000000020000268       0x80 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .bss.buf.5598  0x0000000020000268       0x80 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.correction_a
-                0x00000000200002e8        0xc /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000200002e8        0xc /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.correction_b
-                0x00000000200002f4        0xc /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x00000000200002f4        0xc /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.current_heap_end.4393
-                0x0000000020000300        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000300        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.monitor_stderr
-                0x0000000020000304        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000304        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.monitor_stdin
-                0x0000000020000308        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000308        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.monitor_stdout
-                0x000000002000030c        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x000000002000030c        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.openfiles
-                0x0000000020000310       0xa0 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000020000310       0xa0 /tmp/ccYY6T30.ltrans0.ltrans.o
  .bss.__malloc_free_list
                 0x00000000200003b0        0x4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
                 0x00000000200003b0                __malloc_free_list
@@ -817,10 +825,10 @@ END GROUP
                 0x00000000200003b4        0x4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
                 0x00000000200003b4                __malloc_sbrk_start
  *(COMMON)
- COMMON         0x00000000200003b8        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ COMMON         0x00000000200003b8        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
                 0x00000000200003b8                errno
  *(.bss_end .bss_end.*)
- .bss_end       0x00000000200003bc        0x4 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .bss_end       0x00000000200003bc        0x4 /tmp/ccYY6T30.ltrans0.ltrans.o
                 0x00000000200003c0                . = ALIGN (0x4)
                 0x00000000200003c0                __bss_end__ = .
                 0x00000000200003c0                _ebss = .
@@ -887,7 +895,7 @@ END GROUP
 
 .comment        0x0000000000000000       0x42
  *(.comment)
- .comment       0x0000000000000000       0x21 /tmp/ccsNTR4r.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x21 /tmp/ccYY6T30.ltrans0.ltrans.o
                                          0x22 (size before relaxing)
  .comment       0x0000000000000021       0x21 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
                                          0x22 (size before relaxing)
@@ -913,7 +921,7 @@ END GROUP
 .ARM.attributes
                 0x0000000000000000       0x31
  .ARM.attributes
-                0x0000000000000000       0x31 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000       0x31 /tmp/ccYY6T30.ltrans0.ltrans.o
  .ARM.attributes
                 0x0000000000000031       0x2e /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
  .ARM.attributes
@@ -983,256 +991,256 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x598
+.debug_aranges  0x0000000000000000      0x5a8
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000      0x190 /tmp/ccsNTR4r.ltrans0.ltrans.o
+                0x0000000000000000      0x1a0 /tmp/ccYY6T30.ltrans0.ltrans.o
  .debug_aranges
-                0x0000000000000190       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+                0x00000000000001a0       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
  .debug_aranges
-                0x00000000000001b0       0x68 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+                0x00000000000001c0       0x68 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
  .debug_aranges
-                0x0000000000000218       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
+                0x0000000000000228       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
  .debug_aranges
-                0x0000000000000230       0x40 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+                0x0000000000000240       0x40 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
  .debug_aranges
-                0x0000000000000270       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+                0x0000000000000280       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
  .debug_aranges
-                0x0000000000000298       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+                0x00000000000002a8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
  .debug_aranges
-                0x00000000000002b8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+                0x00000000000002c8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
  .debug_aranges
-                0x00000000000002d8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+                0x00000000000002e8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
  .debug_aranges
-                0x00000000000002f8       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+                0x0000000000000308       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
  .debug_aranges
-                0x0000000000000320       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+                0x0000000000000330       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
  .debug_aranges
-                0x0000000000000338       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+                0x0000000000000348       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
  .debug_aranges
-                0x0000000000000358       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+                0x0000000000000368       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
  .debug_aranges
-                0x0000000000000378       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+                0x0000000000000388       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
  .debug_aranges
-                0x0000000000000398       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+                0x00000000000003a8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
  .debug_aranges
-                0x00000000000003b8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+                0x00000000000003c8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
  .debug_aranges
-                0x00000000000003d8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x00000000000003e8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
  .debug_aranges
-                0x00000000000003f8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+                0x0000000000000408       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
  .debug_aranges
-                0x0000000000000418       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+                0x0000000000000428       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
  .debug_aranges
-                0x0000000000000438       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+                0x0000000000000448       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
  .debug_aranges
-                0x0000000000000458       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+                0x0000000000000468       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
  .debug_aranges
-                0x0000000000000478       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+                0x0000000000000488       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
  .debug_aranges
-                0x00000000000004a0       0x30 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000000004b0       0x30 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
  .debug_aranges
-                0x00000000000004d0       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000000004e0       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
  .debug_aranges
-                0x00000000000004f8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
+                0x0000000000000508       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
  .debug_aranges
-                0x0000000000000518       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000000528       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
  .debug_aranges
-                0x0000000000000538       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+                0x0000000000000548       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
  .debug_aranges
-                0x0000000000000558       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+                0x0000000000000568       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
  .debug_aranges
-                0x0000000000000578       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+                0x0000000000000588       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x121b9
+.debug_info     0x0000000000000000    0x124e7
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000     0x294a /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_info    0x000000000000294a      0x8cb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
- .debug_info    0x0000000000003215      0xf4b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_info    0x0000000000004160      0x8a4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
- .debug_info    0x0000000000004a04     0x1016 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_info    0x0000000000005a1a      0xf33 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_info    0x000000000000694d      0xba2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_info    0x00000000000074ef      0x959 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_info    0x0000000000007e48       0xc8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
- .debug_info    0x0000000000007f10      0xefd /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_info    0x0000000000008e0d      0xdb1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
- .debug_info    0x0000000000009bbe      0x8d7 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
- .debug_info    0x000000000000a495      0xb12 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_info    0x000000000000afa7      0x9e9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_info    0x000000000000b990       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x000000000000ba52       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
- .debug_info    0x000000000000bb14       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
- .debug_info    0x000000000000bbd6       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
- .debug_info    0x000000000000bc98       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
- .debug_info    0x000000000000bd5a       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
- .debug_info    0x000000000000be1c       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
- .debug_info    0x000000000000bede      0xc01 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_info    0x000000000000cadf     0x1638 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_info    0x000000000000e117     0x1425 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_info    0x000000000000f53c       0xbf /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
- .debug_info    0x000000000000f5fb      0x911 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_info    0x000000000000ff0c      0xdf9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_info    0x0000000000010d05      0xab9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_info    0x00000000000117be      0x9fb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_info    0x0000000000000000     0x2c78 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_info    0x0000000000002c78      0x8cb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_info    0x0000000000003543      0xf4b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_info    0x000000000000448e      0x8a4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
+ .debug_info    0x0000000000004d32     0x1016 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_info    0x0000000000005d48      0xf33 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_info    0x0000000000006c7b      0xba2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_info    0x000000000000781d      0x959 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000008176       0xc8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+ .debug_info    0x000000000000823e      0xefd /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_info    0x000000000000913b      0xdb1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+ .debug_info    0x0000000000009eec      0x8d7 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_info    0x000000000000a7c3      0xb12 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_info    0x000000000000b2d5      0x9e9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_info    0x000000000000bcbe       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x000000000000bd80       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x000000000000be42       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_info    0x000000000000bf04       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+ .debug_info    0x000000000000bfc6       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+ .debug_info    0x000000000000c088       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+ .debug_info    0x000000000000c14a       0xc2 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+ .debug_info    0x000000000000c20c      0xc01 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_info    0x000000000000ce0d     0x1638 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_info    0x000000000000e445     0x1425 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_info    0x000000000000f86a       0xbf /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
+ .debug_info    0x000000000000f929      0x911 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_info    0x000000000001023a      0xdf9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_info    0x0000000000011033      0xab9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_info    0x0000000000011aec      0x9fb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_abbrev   0x0000000000000000     0x2d62
+.debug_abbrev   0x0000000000000000     0x2e19
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000      0x57c /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_abbrev  0x000000000000057c      0x178 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
- .debug_abbrev  0x00000000000006f4      0x35d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_abbrev  0x0000000000000a51      0x15c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
- .debug_abbrev  0x0000000000000bad      0x26b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_abbrev  0x0000000000000e18      0x1fb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_abbrev  0x0000000000001013      0x2c2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_abbrev  0x00000000000012d5      0x1df /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_abbrev  0x00000000000014b4       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
- .debug_abbrev  0x00000000000014c8      0x203 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_abbrev  0x00000000000016cb      0x15a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
- .debug_abbrev  0x0000000000001825      0x19d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
- .debug_abbrev  0x00000000000019c2      0x268 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_abbrev  0x0000000000001c2a      0x229 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_abbrev  0x0000000000001e53       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x0000000000001e67       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
- .debug_abbrev  0x0000000000001e7b       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
- .debug_abbrev  0x0000000000001e8f       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
- .debug_abbrev  0x0000000000001ea3       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
- .debug_abbrev  0x0000000000001eb7       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
- .debug_abbrev  0x0000000000001ecb       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
- .debug_abbrev  0x0000000000001edf      0x215 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_abbrev  0x00000000000020f4      0x2db /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_abbrev  0x00000000000023cf      0x27f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_abbrev  0x000000000000264e       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
- .debug_abbrev  0x0000000000002662      0x1ac /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_abbrev  0x000000000000280e      0x19c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_abbrev  0x00000000000029aa      0x204 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_abbrev  0x0000000000002bae      0x1b4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_abbrev  0x0000000000000000      0x633 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000633      0x178 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_abbrev  0x00000000000007ab      0x35d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_abbrev  0x0000000000000b08      0x15c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000c64      0x26b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_abbrev  0x0000000000000ecf      0x1fb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_abbrev  0x00000000000010ca      0x2c2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x000000000000138c      0x1df /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x000000000000156b       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+ .debug_abbrev  0x000000000000157f      0x203 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_abbrev  0x0000000000001782      0x15a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00000000000018dc      0x19d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_abbrev  0x0000000000001a79      0x268 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x0000000000001ce1      0x229 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_abbrev  0x0000000000001f0a       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000000000001f1e       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x0000000000001f32       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_abbrev  0x0000000000001f46       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+ .debug_abbrev  0x0000000000001f5a       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+ .debug_abbrev  0x0000000000001f6e       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+ .debug_abbrev  0x0000000000001f82       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+ .debug_abbrev  0x0000000000001f96      0x215 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_abbrev  0x00000000000021ab      0x2db /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_abbrev  0x0000000000002486      0x27f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x0000000000002705       0x14 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
+ .debug_abbrev  0x0000000000002719      0x1ac /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_abbrev  0x00000000000028c5      0x19c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_abbrev  0x0000000000002a61      0x204 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_abbrev  0x0000000000002c65      0x1b4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_line     0x0000000000000000     0x312a
+.debug_line     0x0000000000000000     0x316a
  *(.debug_line)
- .debug_line    0x0000000000000000      0x85c /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_line    0x000000000000085c       0xfb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
- .debug_line    0x0000000000000957      0x28d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_line    0x0000000000000be4       0xe1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
- .debug_line    0x0000000000000cc5      0x227 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_line    0x0000000000000eec      0x1ce /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_line    0x00000000000010ba      0x192 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_line    0x000000000000124c      0x14b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_line    0x0000000000001397       0x78 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
- .debug_line    0x000000000000140f      0x1cd /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_line    0x00000000000015dc      0x153 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
- .debug_line    0x000000000000172f       0xf1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
- .debug_line    0x0000000000001820      0x14c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_line    0x000000000000196c      0x234 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_line    0x0000000000001ba0      0x18c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000000000001d2c       0xc4 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
- .debug_line    0x0000000000001df0       0x7c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
- .debug_line    0x0000000000001e6c       0x94 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
- .debug_line    0x0000000000001f00      0x120 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
- .debug_line    0x0000000000002020      0x143 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
- .debug_line    0x0000000000002163       0xb8 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
- .debug_line    0x000000000000221b      0x1a3 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_line    0x00000000000023be      0x3a4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_line    0x0000000000002762      0x3ac /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_line    0x0000000000002b0e       0xa1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
- .debug_line    0x0000000000002baf      0x150 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_line    0x0000000000002cff      0x1ba /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_line    0x0000000000002eb9      0x16a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_line    0x0000000000003023      0x107 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_line    0x0000000000000000      0x89c /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_line    0x000000000000089c       0xfb /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_line    0x0000000000000997      0x28d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_line    0x0000000000000c24       0xe1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000000d05      0x227 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_line    0x0000000000000f2c      0x1ce /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_line    0x00000000000010fa      0x192 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_line    0x000000000000128c      0x14b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_line    0x00000000000013d7       0x78 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+ .debug_line    0x000000000000144f      0x1cd /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_line    0x000000000000161c      0x153 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+ .debug_line    0x000000000000176f       0xf1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_line    0x0000000000001860      0x14c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_line    0x00000000000019ac      0x234 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_line    0x0000000000001be0      0x18c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000001d6c       0xc4 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x0000000000001e30       0x7c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_line    0x0000000000001eac       0x94 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+ .debug_line    0x0000000000001f40      0x120 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+ .debug_line    0x0000000000002060      0x143 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+ .debug_line    0x00000000000021a3       0xb8 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+ .debug_line    0x000000000000225b      0x1a3 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_line    0x00000000000023fe      0x3a4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_line    0x00000000000027a2      0x3ac /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_line    0x0000000000002b4e       0xa1 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memchr.o)
+ .debug_line    0x0000000000002bef      0x150 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_line    0x0000000000002d3f      0x1ba /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_line    0x0000000000002ef9      0x16a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_line    0x0000000000003063      0x107 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_frame    0x0000000000000000      0xcf0
+.debug_frame    0x0000000000000000      0xd24
  *(.debug_frame)
- .debug_frame   0x0000000000000000      0x4c8 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_frame   0x00000000000004c8       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00000000000004e8      0x11c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000000604       0x68 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_frame   0x000000000000066c       0x48 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00000000000006b4       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000000000006e0       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x000000000000070c       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
- .debug_frame   0x000000000000072c       0x3c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_frame   0x0000000000000768       0x30 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x0000000000000798       0x38 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000000000007d0       0x34 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_frame   0x0000000000000804       0xac /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00000000000008b0       0xc4 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000000000000974       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x0000000000000998       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x00000000000009bc       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x0000000000000a08       0x38 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x0000000000000a40       0xc8 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x0000000000000b08       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_frame   0x0000000000000b54       0x90 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x0000000000000be4       0x60 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000000c44       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000000000000c6c       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x0000000000000c94       0x3c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x0000000000000cd0       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000000000      0x4fc /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_frame   0x00000000000004fc       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000000000000051c      0x11c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000000638       0x68 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_frame   0x00000000000006a0       0x48 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00000000000006e8       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000714       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000740       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000000760       0x3c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_frame   0x000000000000079c       0x30 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000000000007cc       0x38 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000804       0x34 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_frame   0x0000000000000838       0xac /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000008e4       0xc4 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000000009a8       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x00000000000009cc       0x24 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00000000000009f0       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x0000000000000a3c       0x38 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x0000000000000a74       0xc8 /usr/lib/gcc/arm-none-eabi/7.1.0/thumb/v7e-m/libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x0000000000000b3c       0x4c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_frame   0x0000000000000b88       0x90 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x0000000000000c18       0x60 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000000c78       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000ca0       0x28 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000000cc8       0x3c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000000d04       0x20 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_str      0x0000000000000000     0x1e74
+.debug_str      0x0000000000000000     0x2495
  *(.debug_str)
- .debug_str     0x0000000000000000      0x914 /tmp/ccsNTR4r.ltrans0.ltrans.o
-                                        0xdb5 (size before relaxing)
- .debug_str     0x0000000000000914      0x51c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_str     0x0000000000000000      0xf35 /tmp/ccYY6T30.ltrans0.ltrans.o
+                                       0x13b4 (size before relaxing)
+ .debug_str     0x0000000000000f35      0x51c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
                                         0x5cf (size before relaxing)
- .debug_str     0x0000000000000e30      0x2d9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_str     0x0000000000001451      0x2d9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
                                         0x84b (size before relaxing)
- .debug_str     0x0000000000001109       0x96 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
+ .debug_str     0x000000000000172a       0x96 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-impure.o)
                                         0x5bd (size before relaxing)
- .debug_str     0x000000000000119f      0x39e /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_str     0x00000000000017c0      0x39e /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
                                         0x9b7 (size before relaxing)
- .debug_str     0x000000000000153d      0x131 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_str     0x0000000000001b5e      0x131 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
                                         0x96e (size before relaxing)
- .debug_str     0x000000000000166e      0x12b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_str     0x0000000000001c8f      0x12b /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
                                         0x704 (size before relaxing)
- .debug_str     0x0000000000001799       0x44 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_str     0x0000000000001dba       0x44 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
                                         0x600 (size before relaxing)
- .debug_str     0x00000000000017dd       0x53 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_str     0x0000000000001dfe       0x53 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
                                         0x967 (size before relaxing)
- .debug_str     0x0000000000001830       0x8a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
+ .debug_str     0x0000000000001e51       0x8a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-ctype_.o)
                                         0x8d5 (size before relaxing)
- .debug_str     0x00000000000018ba       0x45 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_str     0x0000000000001edb       0x45 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
                                         0x5e5 (size before relaxing)
- .debug_str     0x00000000000018ff       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_str     0x0000000000001f20       0x2c /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
                                         0x6ed (size before relaxing)
- .debug_str     0x000000000000192b      0x1a9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_str     0x0000000000001f4c      0x1a9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
                                         0x63b (size before relaxing)
- .debug_str     0x0000000000001ad4       0x57 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_str     0x00000000000020f5       0x57 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
                                         0x761 (size before relaxing)
- .debug_str     0x0000000000001b2b      0x12e /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_str     0x000000000000214c      0x12e /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
                                         0xc13 (size before relaxing)
- .debug_str     0x0000000000001c59       0x91 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_str     0x000000000000227a       0x91 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
                                         0xbb2 (size before relaxing)
- .debug_str     0x0000000000001cea       0xb2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_str     0x000000000000230b       0xb2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
                                         0x5e7 (size before relaxing)
- .debug_str     0x0000000000001d9c       0xa6 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_str     0x00000000000023bd       0xa6 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
                                         0x8f1 (size before relaxing)
- .debug_str     0x0000000000001e42       0x23 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_str     0x0000000000002463       0x23 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
                                         0x6ea (size before relaxing)
- .debug_str     0x0000000000001e65        0xf /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_str     0x0000000000002486        0xf /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
                                         0x6c8 (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x3141
+.debug_loc      0x0000000000000000     0x31ee
  *(.debug_loc)
- .debug_loc     0x0000000000000000     0x138f /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_loc     0x000000000000138f      0x1c9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_loc     0x0000000000001558      0x13f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_loc     0x0000000000001697      0x1c5 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_loc     0x000000000000185c      0x2e2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_loc     0x0000000000001b3e       0x4d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_loc     0x0000000000001b8b       0xea /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_loc     0x0000000000001c75      0x109 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_loc     0x0000000000001d7e      0x301 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_loc     0x000000000000207f      0x17f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_loc     0x00000000000021fe      0x68a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_loc     0x0000000000002888      0x5d6 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_loc     0x0000000000002e5e       0x77 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_loc     0x0000000000002ed5       0xe4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_loc     0x0000000000002fb9      0x110 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_loc     0x00000000000030c9       0x78 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_loc     0x0000000000000000     0x143c /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_loc     0x000000000000143c      0x1c9 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_loc     0x0000000000001605      0x13f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_loc     0x0000000000001744      0x1c5 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_loc     0x0000000000001909      0x2e2 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_loc     0x0000000000001beb       0x4d /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_loc     0x0000000000001c38       0xea /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_loc     0x0000000000001d22      0x109 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_loc     0x0000000000001e2b      0x301 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_loc     0x000000000000212c      0x17f /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_loc     0x00000000000022ab      0x68a /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_loc     0x0000000000002935      0x5d6 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_loc     0x0000000000002f0b       0x77 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_loc     0x0000000000002f82       0xe4 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_loc     0x0000000000003066      0x110 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_loc     0x0000000000003176       0x78 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1250,22 +1258,22 @@ END GROUP
  *(.debug_varnames)
 OUTPUT(stm32experiments.elf elf32-littlearm)
 
-.debug_ranges   0x0000000000000000      0x540
- .debug_ranges  0x0000000000000000      0x268 /tmp/ccsNTR4r.ltrans0.ltrans.o
- .debug_ranges  0x0000000000000268       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
- .debug_ranges  0x0000000000000278       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
- .debug_ranges  0x00000000000002d0       0x48 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
- .debug_ranges  0x0000000000000318       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_ranges  0x0000000000000330       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_ranges  0x0000000000000388       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
- .debug_ranges  0x0000000000000398       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
- .debug_ranges  0x00000000000003b0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
- .debug_ranges  0x00000000000003c0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
- .debug_ranges  0x00000000000003d0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
- .debug_ranges  0x00000000000003e0       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
- .debug_ranges  0x00000000000003f8       0x60 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_ranges  0x0000000000000458       0xa8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_ranges  0x0000000000000500       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_ranges  0x0000000000000510       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
- .debug_ranges  0x0000000000000520       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_ranges  0x0000000000000530       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
+.debug_ranges   0x0000000000000000      0x550
+ .debug_ranges  0x0000000000000000      0x278 /tmp/ccYY6T30.ltrans0.ltrans.o
+ .debug_ranges  0x0000000000000278       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-errno.o)
+ .debug_ranges  0x0000000000000288       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-findfp.o)
+ .debug_ranges  0x00000000000002e0       0x48 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-locale.o)
+ .debug_ranges  0x0000000000000328       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_ranges  0x0000000000000340       0x58 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_ranges  0x0000000000000398       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-sbrkr.o)
+ .debug_ranges  0x00000000000003a8       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_ranges  0x00000000000003c0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-mlock.o)
+ .debug_ranges  0x00000000000003d0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-freer.o)
+ .debug_ranges  0x00000000000003e0       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libm.a(lib_a-s_floor.o)
+ .debug_ranges  0x00000000000003f0       0x18 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-vsnprintf.o)
+ .debug_ranges  0x0000000000000408       0x60 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_ranges  0x0000000000000468       0xa8 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_ranges  0x0000000000000510       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_ranges  0x0000000000000520       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memmove.o)
+ .debug_ranges  0x0000000000000530       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_ranges  0x0000000000000540       0x10 /usr/lib/gcc/arm-none-eabi/7.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-nano-msizer.o)
