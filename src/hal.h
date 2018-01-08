@@ -15,13 +15,15 @@
 #define HAL_RTCPRE_VALUE RCC_CFGR_RTCPRE_3
 
 /**
- * Prescaler for APB2 when clocked from HSE/PLL.
+ * Prescaler for APB2.
+ * Max. clock = 84 MHz
  */
 #define HAL_HSE_APB2_PRE RCC_CFGR_PPRE2_DIV1
 #define HAL_PLL_APB2_PRE RCC_CFGR_PPRE2_DIV2
 
 /**
- * Prescaler for APB2 when clocked from HSE/PLL.
+ * Prescaler for APB1.
+ * Max. clock = 42 MHz
  */
 #define HAL_HSE_APB1_PRE RCC_CFGR_PPRE1_DIV1
 #define HAL_PLL_APB1_PRE RCC_CFGR_PPRE1_DIV4
@@ -78,7 +80,11 @@
 #define HAL_LED_GREEN_BIT	2
 #define HAL_LED_BLUE_BIT	3
 
-
+/**
+ * Timer 2 maximal value.
+ * 42 MHz / 500 000 = 84 Hz PWM.
+ */
+#define HAL_TIM2_MAX		500000
 
 /**
  * Basic hardware initialization.

@@ -34,7 +34,7 @@ void InitializeHardware(void)
 	TIM2->PSC = 1;
 
 	// Counting from 0 to this value
-	TIM2->ARR = 10000;
+	TIM2->ARR = HAL_TIM2_MAX;
 
 	// PWM mode
 	TIM2->CCMR1 = (TIM2->CCMR1 & ~TIM_CCMR1_OC2M) | TIM_CCMR1_OC2M_2 | TIM_CCMR1_OC2M_1;
@@ -82,7 +82,7 @@ void SetFullClock(void)
 	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_SW) | RCC_CFGR_SW_HSE;
 	while((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSE) {}
 
-	// Swithching off HSI
+	// Switching off HSI
 	RCC->CR &= RCC_CR_HSION;
 
 	// Setting-up PLL
@@ -116,7 +116,7 @@ void SetFullClock(void)
 	// AHB clock
 	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_HPRE) | HAL_PLL_AHB_PRE;
 
-	// Configuring memory
+	// Configurina = RCC->CFGR;a = RCC->CFGR;a = RCC->CFGR;g memory
 
 	// Amount of waitstates
 	FLASH->ACR = (FLASH->ACR & ~FLASH_ACR_LATENCY) | HAL_FLASH_WAITSTATES;

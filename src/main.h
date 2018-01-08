@@ -26,13 +26,13 @@ unsigned char pwm_levels[3];
 
 // Correction factors by colors
 // PWM = a*X + b, X=[0,1]
-#define CORRECTION_A_RED	10000.0
-#define CORRECTION_A_GREEN	3000.0
-#define CORRECTION_A_BLUE	5000.0
+#define CORRECTION_A_RED	(HAL_TIM2_MAX * 1.0)
+#define CORRECTION_A_GREEN	(HAL_TIM2_MAX * 0.3)
+#define CORRECTION_A_BLUE	(HAL_TIM2_MAX * 0.8)
 
-#define CORRECTION_B_RED	0.0
-#define CORRECTION_B_GREEN	0.0
-#define CORRECTION_B_BLUE	0.0
+#define CORRECTION_B_RED	(HAL_TIM2_MAX * 0.0001)
+#define CORRECTION_B_GREEN	(HAL_TIM2_MAX * 0.00005)
+#define CORRECTION_B_BLUE	(HAL_TIM2_MAX * 0.0001)
 
 float correction_a[3];
 float correction_b[3];
